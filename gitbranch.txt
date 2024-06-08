@@ -1,0 +1,30 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Git> git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+PS D:\Git> git branch
+* main
+PS D:\Git> git branch "developer1"
+PS D:\Git> git branch "developer2"
+PS D:\Git> git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+PS D:\Git> git branch
+  developer1
+  developer2
+* main
+PS D:\Git> git checkout developer1
+Switched to branch 'developer1'
+PS D:\Git> git branch -a
+* developer1
+  developer2
+  main
+  remotes/origin/main

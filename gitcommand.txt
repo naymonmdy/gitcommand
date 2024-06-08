@@ -1,0 +1,134 @@
+Git is a powerful version control system used for tracking changes in source code during software development. Below is a comprehensive list of commonly used Git commands along with brief explanations of what each command does.
+
+### Basic Git Commands
+
+- `git init`:
+  Initializes a new Git repository in the current directory.
+
+- `git clone <repository>`:
+  Creates a copy of an existing repository. The repository can be a local path or a URL.
+
+- `git add <file>`:
+  Adds a file to the staging area.
+
+- `git add .`:
+  Adds all changes in the current directory to the staging area.
+
+- `git commit -m "message"`:
+  Records the changes in the repository with a message describing the changes.
+
+- `git status`:
+  Shows the status of changes as untracked, modified, or staged.
+
+- `git log`:
+  Displays a list of all the commits in the current branch.
+
+- `git show <commit>`:
+  Shows information about a specific commit.
+
+- `git diff`:
+  Shows the differences between the working directory and the staging area.
+
+- `git diff --staged`:
+  Shows the differences between the staging area and the last commit.
+
+### Branching and Merging
+
+- `git branch`:
+  Lists all local branches in the repository.
+
+- `git branch <branch>`:
+  Creates a new branch.
+
+- `git checkout <branch>`:
+  Switches to the specified branch.
+
+- `git checkout -b <branch>`:
+  Creates and switches to a new branch.
+
+- `git merge <branch>`:
+  Merges the specified branch into the current branch.
+
+- `git rebase <branch>`:
+  Reapplies commits on top of another base tip.
+
+### Remote Repositories
+
+- `git remote`:
+  Lists all remote repositories.
+
+- `git remote add <name> <url>`:
+  Adds a new remote repository.
+
+- `git fetch <remote>`:
+  Fetches all branches from the remote repository.
+
+- `git pull <remote>`:
+  Fetches and merges changes from the remote repository into the current branch.
+
+- `git push <remote> <branch>`:
+  Pushes the current branch to the remote repository.
+
+- `git push -u <remote> <branch>`:
+  Pushes the current branch and sets the upstream branch.
+
+### Stashing and Cleaning
+
+- `git stash`:
+  Stashes changes in a dirty working directory away.
+
+- `git stash apply`:
+  Applies the stashed changes to the working directory.
+
+- `git stash pop`:
+  Applies the stashed changes and removes them from the stash list.
+
+- `git stash list`:
+  Lists all stashed changes.
+
+- `git clean -f`:
+  Removes untracked files from the working directory.
+
+### Advanced Commands
+
+- `git cherry-pick <commit>`:
+  Applies the changes from the specified commit.
+
+- `git revert <commit>`:
+  Reverts a specific commit by creating a new commit with the inverse of the specified commit's changes.
+
+- `git reset <commit>`:
+  Resets the current branch to the specified commit.
+
+  - `git reset --soft <commit>`:
+    Resets the index but not the working directory.
+
+  - `git reset --hard <commit>`:
+    Resets the index and working directory.
+
+- `git log --oneline`:
+  Displays a simplified log view with each commit on one line.
+
+- `git tag <tagname>`:
+  Creates a new tag for the current commit.
+
+- `git describe`:
+  Describes the current commit with the most recent tag reachable from it.
+
+### Configuration
+
+- `git config --global user.name "Name"`:
+  Sets the name you want attached to your commits.
+
+- `git config --global user.email "email@example.com"`:
+  Sets the email you want attached to your commits.
+
+- `git config --global core.editor "editor"`:
+  Sets the default editor used by Git.
+
+### Help Commands
+
+- `git help <command>`:
+  Displays help information about the specified Git command.
+
+This list covers many of the basic and advanced commands you'll use with Git. For more detailed information, you can always refer to the [official Git documentation](https://git-scm.com/doc).
